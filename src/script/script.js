@@ -67,11 +67,11 @@ const operação = sinal => {
     default:
       alert('Insira um simbolo válido');
   }
-  previaCalculadora.textContent += ` ${segundoValor} =`;
   inputCalculadora.textContent = resultado;
 };
 
-resultOperation.addEventListener('click', e => {
+resultOperation.addEventListener('click', () => {
+  previaCalculadora.textContent = ` ${segundoValor} ${sinal} ${segundoValor} =`;
   operação(sinal);
 });
 
