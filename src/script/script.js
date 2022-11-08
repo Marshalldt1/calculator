@@ -71,7 +71,7 @@ const operação = sinal => {
 };
 
 resultOperation.addEventListener('click', () => {
-  previaCalculadora.textContent = ` ${segundoValor} ${sinal} ${segundoValor} =`;
+  previaCalculadora.textContent = `${primeiroValor} ${sinal} ${segundoValor} =`;
   operação(sinal);
 });
 
