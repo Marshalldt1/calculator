@@ -28,6 +28,10 @@ sinalMatematico.forEach(item => {
       sinal = e.target.textContent;
       previaCalculadora.textContent = `${primeiroValor} ${sinal}`;
       console.log(sinal);
+      inputCalculadora.textContent = '';
+      if (inputCalculadora.textContent === '') {
+        segundoValor = '';
+      }
       return;
     }
     if (sinal !== '' || segundoValor) {
